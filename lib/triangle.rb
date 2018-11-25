@@ -18,6 +18,8 @@ class Triangle
       else
         type = :scalene
       end
+    else
+      type = "none"
     end
     if type === "none"
       begin
