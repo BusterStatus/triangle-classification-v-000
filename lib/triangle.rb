@@ -20,6 +20,7 @@ class Triangle
       end
     end
     if type === nil
+      begin
       
     else
       type
