@@ -9,10 +9,10 @@ class Triangle
   end
   
   def is_triangle?(a,b,c)
-  sorted = [a,b,c].sort
-  greatest_side = sorted.pop
-  greatest_side < sorted.sum
-end
+    sorted = [a,b,c].sort
+    greatest_side = sorted.pop
+    greatest_side < sorted.sum
+  end
   
   def kind
     type = "none"
