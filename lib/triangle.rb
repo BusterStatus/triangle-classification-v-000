@@ -22,7 +22,8 @@ class Triangle
     if type === nil
       begin
         raise TriangleError
-      rescue 
+      rescue TriangleError
+      
     else
       type
     end
