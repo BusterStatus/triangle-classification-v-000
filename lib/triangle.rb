@@ -22,8 +22,6 @@ class Triangle
       if type === "none"
         begin
           raise TriangleError
-        rescue TriangleError => error
-          puts error.message
         end
       else
         type
