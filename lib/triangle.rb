@@ -9,7 +9,7 @@ class Triangle
   end
   
   def is_triangle?(a,b,c)
-    sorted = [a.to_i,b.to_i,c.to_i].sort
+    sorted = [a,b,c].sort
     greatest_side = sorted.pop
     greatest_side < sorted[0] + sorted[1]
   end
