@@ -1,3 +1,8 @@
 class Triangle
-  # write code here
+
+  attr_accessor :side_one
+
+  def initialize(attributes)
+    attributes.each { |key, value| (("#{key}")
+
 end
