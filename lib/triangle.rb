@@ -11,7 +11,7 @@ class Triangle
   def is_triangle?(a,b,c)
     sorted = [a.to_i,b.to_i,c.to_i].sort
     greatest_side = sorted.pop
-    greatest_side < sorted.sum
+    greatest_side < sorted[0] + sorted[1]
   end
   
   def kind
