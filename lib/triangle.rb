@@ -18,10 +18,12 @@ class Triangle
       else
         type = :scalene
       end
+    end
     if type === nil
       
     else
       type
+    end
     end
   end
   
