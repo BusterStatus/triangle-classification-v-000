@@ -19,16 +19,15 @@ class Triangle
         type = :scalene
       end
     else
-      type = "none"
-    end
-    if type === "none"
-      begin
-        raise TriangleError
-      rescue TriangleError => error
-        puts error.message
+      if type === "none"
+        begin
+          raise TriangleError
+        rescue TriangleError => error
+          puts error.message
+        end
+      else
+        type
       end
-    else
-      type
     end
   end
   
