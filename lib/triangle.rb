@@ -19,7 +19,7 @@ class Triangle
         type = :scalene
       end
     end
-    if type === nil
+    if type === "none"
       begin
         raise TriangleError
       rescue TriangleError => error
