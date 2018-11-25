@@ -9,6 +9,11 @@ class Triangle
   end
   
   def kind
+    def is_triangle?(a,b,c)
+      sorted = [a,b,c].sort
+      greatest_side = sorted.pop
+      greatest_side < sorted.sum
+end
     type = "none"
     if (@side1 > 0 && @side2 > 0 && @side3 > 0) && ((@side1 + @side2 > @side3) || (@side1 + @side3 > @side2) || (@side2 + @side3 > @side1))
       if @side1 === @side2 && @side1 === @side3
